@@ -3,9 +3,11 @@
 
 .searchPage {
   width: 100%;
-  height: 100vh;
   display: flex;
   flex-direction: column;
+  background-image: url(../assets/di.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .searchPage .header {
@@ -17,7 +19,8 @@
       gap: 10px;
       justify-content: space-between;
       padding: 10px;
-      background-color: var(--color-background1);
+      /* background-color: var(--color-background1); */
+      background-image: url(../assets/di.jpg);
     }
 
 .searchPage .header .top-bar .logo {
@@ -60,7 +63,9 @@
 
 .searchPage .category{
     color: var(--color-background-light);
-    padding:20px;
+    padding:0 20px;
+    padding-top: 10px;
+
   }
 
 .searchPage .searchFloatContent {
