@@ -19,7 +19,7 @@
     font-size: 4rem;
     font-weight: 800;
   }
-  #playPage {
+  #playPageId {
     .introduce {
       margin: initial;
       flex-wrap: nowrap;
@@ -64,48 +64,9 @@
       }
     }
     .SimilarGame {
-      grid-auto-rows: 80px;
-      grid-template-columns: repeat(4, 1fr);
-      grid-gap: 8px;
-      padding: 10px;
-      
-      .gameItem {
-        &::after {
-          font-size: 1.2em;
-        }
-        
-        img {
-          border-width: 1px;
-        }
-      }
-    }
-    .gameStats {
-      .tags {
-        flex-wrap: wrap;
-        justify-content: center;
-        
-        .tag {
-          font-size: 0.8rem;
-          padding: 3px 8px;
-        }
-      }
-    }
-    .playButton {
-      padding: 15px;
-      font-size: 1.5rem;
-      
-      &::before {
-        font-size: 1em;
-      }
-    }
-  }
-
-  .section-title {
-    font-size: 1rem;
-    
-    svg {
-      width: 16px;
-      height: 16px;
+      grid-auto-rows: initial;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 20px;
     }
   }
 }

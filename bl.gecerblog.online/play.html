@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
+<html lang="en" cyan>
+  <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,target-densitydpi=high-dpi,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=375, user-scalable=no" />
     <title>bl.gecerblog.online</title>
     <link rel="icon" href="logo.png" />
     <link rel="stylesheet" href="prod-css/play.css" />
@@ -12,220 +11,182 @@
         crossorigin="anonymous"></script>
 </head>
 
-<body>
-    <div class="playPage loadingAnimation" id="playPage">
-        <div class="gameBanner" onclick="gotoPlayGame()">
-            <img hidden class="bgdimg gameImgUrl" src="" alt="" />
-            
-            <div class="gameBannerbox">
-                <img class="mainImg gameImgUrl" src="./assets/placeholder.svg" alt="" srcset="" />
-
-
-                <div class="gameStats">
-                    <div class="rating">
-                        <span class="stars">★★★★★</span>
-                        <span class="score">4.8</span>
-                    </div>
-                    <div class="tags">
-                        <span class="tag">#Hot</span>
-                        <span class="tag">#Featured</span>
-                    </div>
-                </div>
-                <div class="gameTitle font4"></div>
-                <div class="footer">
-                    <div class="gameMsg">
-                        <img src="./assets/a.png" alt="" />
-                        <div class="font08 gameMsgNum"></div>
-                    </div>
-                    <div class="gameMsg">
-                        <img src="./assets/b.png" alt="" />
-                        <div class="font08 gameMsgNum"></div>
-                    </div>
-                    <div class="gameMsg">
-                        <img src="./assets/c.png" alt="" />
-                        <div class="font08 gameMsgNum"></div>
-                    </div>
-                    <div class="gameMsg">
-                        <img src="./assets/d.png" alt="" />
-                        <div class="font08 gameMsgNum"></div>
-                    </div>
-                </div>
-                 
-                <!-- <div style="width: 300px; height: 250px;">
-                    <ins class="adsbygoogle"
-                        style="display:block"
-                        data-ad-client="ca-pub-8566362287539988"
-                        data-ad-slot="2691321130"
-                        data-ad-format="auto"
-                        data-full-width-responsive="true"></ins>
-                    <script>
-                        (adsbygoogle = window.adsbygoogle || []).push({});
-                    </script>
-                </div> -->
-
-                <div class="playButton font3" onclick="gotoPlayGame()">
-                    <!-- <img src="./assets/kaishi.png" alt=""> -->
-                    Play
-                </div>
-                <div class="description-container">
-                    <div class="section-title">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-                            <path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zM6 20V4h7v5h5v11H6z" fill="currentColor"/>
-                        </svg>
-                        <span>Description</span>
-                    </div>
-                    <div class="description font2"></div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="similar-container">
-            <div class="section-title">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-                    <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5z" fill="currentColor"/>
-                </svg>
-                <span>Similar Games</span>
-            </div>
-            <div class="SimilarGame"></div>
-        </div>
-              <div class="site-info-area font1">
-        <h2 style="text-align: center">Welcome to GAME - Your Ultimate Gaming Destination!</h2>
-        <ins class="adsbygoogle"
-            style="display:block; text-align:center;"
-            data-ad-layout="in-article"
-            data-ad-format="fluid"
-            data-ad-client="ca-pub-8566362287539988"
-            data-ad-slot="7994436473"></ins>
-        <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-        <p>
-          Discover an exciting world of online gaming at GAME, where entertainment meets excellence! Our platform offers a vast collection of free HTML5 games, carefully curated to provide the best gaming experience across all devices - from smartphones and tablets to laptops and desktop computers.
-        </p>
-
-        <p>
-          Dive into our diverse categories featuring:
-          <ul>
-            <li>Action-packed adventures and thrilling racing games</li>
-            <li>Mind-bending puzzles and strategic challenges</li>
-            <li>Sports simulations and competitive multiplayer games</li>
-            <li>Classic arcade favorites and modern HTML5 masterpieces</li>
-          </ul>
-        </p>
-
-        <p>
-          What makes GAME special:
-          <ul>
-            <li>Instant Play: No downloads required - jump straight into the action!</li>
-            <li>Cross-Platform: Seamless gaming experience across all your devices</li>
-            <li>Regular Updates: Fresh content added regularly to keep the excitement alive</li>
-            <li>User-Friendly: Easy navigation and smooth gameplay for all ages</li>
-          </ul>
-        </p>
-
-        <p>
-          Whether you're a casual gamer looking for quick fun or a dedicated player seeking new challenges, GAME is your perfect gaming companion. Join our growing community of players and start your gaming adventure today!
-        </p>
-      </div>
-      <div class="shengming font1">
-        <h3>Legal Notice</h3>
-        
-        <div class="legal-content">
-          <div class="legal-section">
-            <h4>Terms of Use</h4>
-            <p>
-              By accessing and using this platform, you agree to comply with our terms and conditions. Users are responsible for their actions and content interactions on the platform. The platform reserves the right to modify these terms at any time, with changes effective immediately upon posting.
-            </p>
-          </div>
-
-          <div class="legal-section">
-            <h4>Content Disclaimer</h4>
-            <p>
-              All content and materials available on this platform are provided "as is" without any warranties, expressed or implied. While we strive to maintain accurate and up-to-date content, we make no representations or warranties of any kind regarding the completeness, accuracy, reliability, suitability, or availability of the platform.
-            </p>
-          </div>
-
-          <div class="legal-section">
-            <h4>User Responsibilities</h4>
-            <p>
-              Users acknowledge and agree that they are solely responsible for their use of the platform and any content they access. The platform shall not be liable for any direct, indirect, incidental, special, or consequential damages resulting from the use or inability to use the service.
-            </p>
-          </div>
-        </div>
-
-        <div class="policy">
-          <a href="./PrivacyPolicy.html">Privacy Policy</a>
-          <span> &nbsp; | &nbsp;</span>
-          <a href="./TermsofService.html">Terms of Service</a>
-        </div>
-      </div>
+  <body>
+    <div class="playPage" id="playPage">
+      <div class="header">
         <a href="./">
-            <div class="HomeButton font1">
-                <img src="./assets/fanhui.png" alt="" srcset="" />
-            </div>
+          <div class="HomeButton font1">
+            <img src="./assets/left.svg" alt="" srcset="" />
+          </div>
         </a>
+        <div class="font4 title">bl.gecerblog.online</div>
+      </div>
+
+      <div class="gameBanner" onclick="gotoPlayGame()">
+        <img class="bgdimg gameImgUrl" alt="" />
+
+        <div class="gameBannerbox">
+          <img
+            class="mainImg gameImgUrl"
+            src="./assets/placeholder.svg"
+            alt=""
+            srcset=""
+          />
+          <div class="gameTitle font4"></div>
+          <div class="description font2"></div>
+
+          <div class="playButton font2" onclick="gotoPlayGame()">
+            <img src="./assets/kaishi.png" alt="" />
+            Play Now
+          </div>
+
+          <div class="footer">
+            <div class="gameMsg">
+              <img src="./assets/9.png" alt="" />
+              <div class="font08 gameMsgNum"></div>
+            </div>
+            <div class="gameMsg">
+              <img src="./assets/10.png" alt="" />
+              <div class="font08 gameMsgNum"></div>
+            </div>
+            <div class="gameMsg">
+              <img src="./assets/11.png" alt="" />
+              <div class="font08 gameMsgNum"></div>
+            </div>
+            <div class="gameMsg">
+              <img src="./assets/12.png" alt="" />
+              <div class="font08 gameMsgNum"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="SimilarGame"></div>
+            <div class="site-info-area font1">
+            <h2 style="text-align: left">
+                If you enjoy our site, learn more about GAME!
+            </h2>
+
+            <ins class="adsbygoogle" style="display:block; text-align:center;"
+                data-ad-layout="in-article"
+                data-ad-format="fluid"
+                data-ad-client="ca-pub-8566362287539988"
+                data-ad-slot="7994436473"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+
+            <p>
+                Discover a world of exciting challenges online at GAME, the ultimate
+                destination for amazing games designed for girls, boys, and kids with
+                diverse interests! Our website offers a vast collection of free games,
+                accessible on mobile phones, tablets, computers, and laptops. With a
+                variety of fun categories, you can enjoy your favorite characters in
+                games like motorcycle, adventure, spa, action, makeover, and dress-up,
+                suitable for both boys and girls. Popular cartoon categories include
+                Princesses, Ben 10, Batman, Superheroes, Pokemon, Fantastic Four, Hulk,
+                Thor, Little Mermaid, Moana, and Frozen.
+                10,Batman,Superheroes,Pokemon,Fantastic Four,Hulk,Thor,Little
+                Mermaid,Moana or Frozen!
+            </p>
+
+            <p>
+                Experience cutting-edge technology with HTML5 games, ensuring seamless
+                play on mobile devices. Just connect to the internet, visit GAME via
+                Google, and start playing with friends. Explore our new 2 Player
+                category, along with 3 Player and even 4 Player games for children.
+                Challenge yourself with adventure, chess, puzzle, shooting, and racing
+                games, featuring fast cars, 3D vehicles, motorcycles, helicopters,
+                airplanes, and F1 cars. Dive into endless fun and adventure on GAME!
+            </p>
+        </div>
+        
+        <div class="shengming font1">
+            <h3 style="text-align: left">About Us</h3>
+            <div>
+                User Responsibility: Users shall bear full responsibility for the
+                content they provide in accordance with the law, and the platform shall
+                not assume any responsibility. The content uploaded by the user only
+                represents the author's viewpoint and does not represent the platform's
+                viewpoint. The platform has the right to modify and interpret this
+                statement. If there are any changes, the user will be notified in an
+                appropriate manner. The user's continued use of the game service is
+                deemed to have accepted the modified declaration
+            </div>
+            <div class="policy">
+                <a href="./PrivacyPolicy.html">Privacy Policy</a>
+                <span> &nbsp; | &nbsp;</span>
+                <a href="./TermsofService.html">Terms-of Service</a>
+            </div>
+        </div>
+
     </div>
-</body>
-<script type="module">
-    import { getGamesListApi, getGamesListCategory } from "./assets/js/business.js";
+  </body>
+  <script type="module">
+    import {
+      getGamesListApi,
+      getGamesListCategory,
+    } from "./assets/js/business.js";
 
     const urlParams = new URLSearchParams(window.location.search);
     const title = urlParams.get("title");
-    let allGameList = await getGamesListApi({ name: title });
+    let allGameList = [];
+    allGameList = await getGamesListApi({ name: title });
+
     window.gamedata = allGameList[0];
 
     Array.prototype.forEach.call(
-        document.getElementsByClassName("gameImgUrl"),
-        (item) => {
-            item.src = gamedata.thumb;
-        }
+      document.getElementsByClassName("gameImgUrl"),
+      (item) => {
+        item.src = gamedata.thumb;
+      }
     );
 
     Array.prototype.forEach.call(
-        document.getElementsByClassName("gameTitle"),
-        (item) => {
-            item.innerHTML = gamedata.title;
-        }
+      document.getElementsByClassName("gameTitle"),
+      (item) => {
+        item.innerHTML = gamedata.title;
+      }
     );
 
-    Array.from(document.getElementsByClassName("gameMsgNum"))[0].innerHTML = Math.floor(Math.random() * 1000)
-    Array.from(document.getElementsByClassName("gameMsgNum"))[1].innerHTML = Math.floor(Math.random() * 100)
-    Array.from(document.getElementsByClassName("gameMsgNum"))[2].innerHTML = Math.floor(Math.random() * 2000)
-    Array.from(document.getElementsByClassName("gameMsgNum"))[3].innerHTML = Math.floor(Math.random() * 3000)
+    Array.from(document.getElementsByClassName("gameMsgNum"))[0].innerHTML =
+      Math.floor(Math.random() * 1000);
+    Array.from(document.getElementsByClassName("gameMsgNum"))[1].innerHTML =
+      Math.floor(Math.random() * 100);
+    Array.from(document.getElementsByClassName("gameMsgNum"))[2].innerHTML =
+      Math.floor(Math.random() * 2000);
+    Array.from(document.getElementsByClassName("gameMsgNum"))[3].innerHTML =
+      Math.floor(Math.random() * 3000);
 
     document.querySelector(".description").innerHTML = gamedata.description;
 
-     // 关闭首评加载动画的时机
-     document.querySelector('.playPage').classList.toggle('loadingAnimation', false)
-    // 关闭首评加载动画的时机
-
-    let SimilarGameList = await getGamesListApi({ num: 30, category: getGamesListCategory.indexOf(gamedata.category) });
+    let SimilarGameList = await getGamesListApi({
+      num: 30,
+      category: getGamesListCategory.indexOf(gamedata.category),
+    });
 
     SimilarGameList.forEach((item) => {
-        document.querySelector(".SimilarGame").innerHTML += `
+      document.querySelector(".SimilarGame").innerHTML += `
             <a href="play.html?title=${item.title}">
                 <div class="gameItem"> <img src="${item.thumb}" alt=""></div>
-            </a>`
-    })
-
+            </a>`;
+    });
 
     window.gotoPlayGame = function () {
-        window.location.href = 'gamePage.html?id=' + gamedata.url.split('/').filter(Boolean).pop();
-    }
+      window.location.href = gamedata.url;
+    };
+  </script>
 
-</script>
+  <!-- gtag -->
 
-<!-- gtag -->
+      <!-- Google tag (gtag.js) -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-EEGN42YL41"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EEGN42YL41"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-EEGN42YL41');
-    </script>
+        gtag('config', 'G-EEGN42YL41');
+      </script>
         
-
 </html>

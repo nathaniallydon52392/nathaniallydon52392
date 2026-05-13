@@ -12,11 +12,21 @@ a {
   all: unset;
 }
 
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
 body {
   line-height: 1;
   transition: all 0.5s;
   font-size: var(--fontSize);
-  background: var(--color-background1);
+  background: black;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 
