@@ -9,14 +9,40 @@
     <link rel="stylesheet" href="prod-css/play.css" />
     <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
     <script>
-    window.googletag = window.googletag || {cmd: []};
-    googletag.cmd.push(function() {
-        googletag.defineSlot('/23347781215/gb.gecerblog.online_ad_01', ['fluid'], 'div-gpt-ad-1784530825654-0').addService(googletag.pubads());
-        googletag.defineSlot('/23347781215/gb.gecerblog.online_banner_01', [[300, 250], [300, 75], [300, 50], [320, 100], [320, 50]], 'div-gpt-ad-1784530872185-0').addService(googletag.pubads());
-        googletag.defineSlot('/23347781215/gb.gecerblog.online_inter_ad_01', ['fluid'], 'div-gpt-ad-1784530911100-0').addService(googletag.pubads());
-        googletag.pubads().enableSingleRequest();
-        googletag.enableServices();
-    });
+        window.googletag = window.googletag || {cmd: []};
+        window.anchorSlot = null;
+        window.interstitialSlot = null;
+
+        googletag.cmd.push(function() {
+            window.anchorSlot = googletag.defineOutOfPageSlot(
+                '/23347781215/gb.gecerblog.online_ad_01',
+                googletag.enums.OutOfPageFormat.BOTTOM_ANCHOR
+            );
+            if (window.anchorSlot) {
+                window.anchorSlot.addService(googletag.pubads());
+            }
+
+            window.interstitialSlot = googletag.defineOutOfPageSlot(
+                '/23347781215/gb.gecerblog.online_inter_ad_01',
+                googletag.enums.OutOfPageFormat.INTERSTITIAL
+            );
+            if (window.interstitialSlot) {
+                window.interstitialSlot.addService(googletag.pubads());
+            }
+
+            googletag.defineSlot(
+                '/23347781215/gb.gecerblog.online_banner_01',
+                [[300,250],[300,75],[300,50],[320,100],[320,50]],
+                'div-gpt-ad-1784530872185-0'
+            ).addService(googletag.pubads());
+
+            googletag.pubads().enableSingleRequest();
+            googletag.enableServices();
+
+            if (window.anchorSlot) {
+                googletag.display(window.anchorSlot);
+            }
+        });
     </script>
 </head>
 
@@ -121,20 +147,8 @@
             </div>
         </a>
 
-        <!-- Interstitial Ad -->
-        <div id="div-gpt-ad-1784530911100-0">
-            <script>
-            googletag.cmd.push(function() { googletag.display('div-gpt-ad-1784530911100-0'); });
-            </script>
-        </div>
     </div>
 
-            <!-- Anchor Ad -->
-    <div id="div-gpt-ad-1784530825654-0">
-        <script>
-        googletag.cmd.push(function() { googletag.display('div-gpt-ad-1784530825654-0'); });
-        </script>
-    </div>
 </body>
 <script type="module">
     import { getGamesListApi, getGamesListCategory } from "./assets/js/business.js";
@@ -170,6 +184,15 @@
 
      // 关闭首评加载动画的时机
      document.querySelector('.playPage').classList.toggle('loadingAnimation', false)
+
+    // 页面打开自动展示 GAM 插屏广告
+    setTimeout(function(){
+        googletag.cmd.push(function(){
+            if (window.interstitialSlot) {
+                googletag.display(window.interstitialSlot);
+            }
+        });
+    },1000);
     // 关闭首评加载动画的时机
 
     let SimilarGameList = await getGamesListApi({ num: 30, category: getGamesListCategory.indexOf(gamedata.category) });
