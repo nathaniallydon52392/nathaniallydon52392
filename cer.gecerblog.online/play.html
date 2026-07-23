@@ -7,8 +7,41 @@
     <title>cer.gecerblog.online</title>
     <link rel="icon" href="logo.png" />
     <link rel="stylesheet" href="prod-css/play.css" />
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8566362287539988"
-        crossorigin="anonymous"></script>
+    <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
+    <script>
+        window.googletag = window.googletag || {cmd: []};
+        window.anchorSlot = null;
+        window.interstitialSlot = null;
+
+        googletag.cmd.push(function() {
+            window.anchorSlot = googletag.defineOutOfPageSlot(
+                '/23347781215/cer.gecerblog.online_anchor_ad_01',
+                googletag.enums.OutOfPageFormat.BOTTOM_ANCHOR
+            );
+            if (window.anchorSlot) {
+                window.anchorSlot.addService(googletag.pubads());
+            }
+
+            window.interstitialSlot = googletag.defineOutOfPageSlot(
+                '/23347781215/cer.gecerblog.online_inter_ad_01',
+                googletag.enums.OutOfPageFormat.INTERSTITIAL
+            );
+            if (window.interstitialSlot) {
+                window.interstitialSlot.addService(googletag.pubads());
+            }
+
+            googletag.defineSlot('/23347781215/cer.gecerblog.online_banner_01', 
+            [[300, 250], [300, 50], [320, 100], [300, 100], [300, 75], [320, 50]], 
+            'div-gpt-ad-1784795746499-0').addService(googletag.pubads());
+
+            googletag.pubads().enableSingleRequest();
+            googletag.enableServices();
+
+            if (window.anchorSlot) {
+                googletag.display(window.anchorSlot);
+            }
+        });
+    </script>
 </head>
 
 <body>
@@ -38,17 +71,12 @@
                     </div>
                 </div>
                 
-                <!-- <div style="width: 300px; height: 250px; margin: 0 auto; margin-top: 20px;">
-                    <ins class="adsbygoogle"
-                        style="display:block"
-                        data-ad-client="ca-pub-8566362287539988"
-                        data-ad-slot="9561307896"
-                        data-ad-format="auto"
-                        data-full-width-responsive="true"></ins>
+                <!-- Banner Ad -->
+                <div id="div-gpt-ad-1784795746499-0" style="min-width:300px; min-height:50px; margin:0 auto; display:flex; justify-content:center; align-items:center;">
                     <script>
-                        (adsbygoogle = window.adsbygoogle || []).push({});
+                        googletag.cmd.push(function() { googletag.display('div-gpt-ad-1784795746499-0'); });
                     </script>
-                </div> -->
+                </div>
 
                 <div class="playButton font3" onclick="gotoPlayGame()">
                     <img src="./assets/kaishi.png" alt="">
@@ -65,16 +93,6 @@
             <h2 style="text-align: center">
                 If you enjoy our site, learn more about GAME!
             </h2>
-
-            <ins class="adsbygoogle"
-                style="display:block; text-align:center;"
-                data-ad-layout="in-article"
-                data-ad-format="fluid"
-                data-ad-client="ca-pub-8566362287539988"
-                data-ad-slot="4165432719"></ins>
-            <script>
-                (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
 
             <p>
                 Discover a world of exciting challenges online at GAME, the ultimate
@@ -165,6 +183,15 @@
      document.querySelector('.playPage').classList.toggle('loadingAnimation', false)
     // 关闭首评加载动画的时机
 
+        // 页面打开自动展示 GAM 插屏广告
+    setTimeout(function(){
+        googletag.cmd.push(function(){
+            if (window.interstitialSlot) {
+                googletag.display(window.interstitialSlot);
+            }
+        });
+    },1000);
+    
     let SimilarGameList = await getGamesListApi({ num: 30, category: getGamesListCategory.indexOf(gamedata.category) });
 
     SimilarGameList.forEach((item) => {

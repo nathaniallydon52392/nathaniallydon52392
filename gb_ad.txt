@@ -1,0 +1,54 @@
+锚定：
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
+<script>
+  window.googletag = window.googletag || {cmd: []};
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/23347781215/gb.gecerblog.online_ad_01', ['fluid'], 'div-gpt-ad-1784530825654-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+</script>
+
+<!-- /23347781215/gb.gecerblog.online_ad_01 -->
+<div id='div-gpt-ad-1784530825654-0'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1784530825654-0'); });
+  </script>
+</div>
+
+
+横幅：
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
+<script>
+  window.googletag = window.googletag || {cmd: []};
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/23347781215/gb.gecerblog.online_banner_01', [[300, 250], [300, 75], [300, 50], [320, 100], [320, 50]], 'div-gpt-ad-1784530872185-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+</script>
+
+<!-- /23347781215/gb.gecerblog.online_banner_01 -->
+<div id='div-gpt-ad-1784530872185-0' style='min-width: 300px; min-height: 50px;'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1784530872185-0'); });
+  </script>
+</div>
+
+插屏：
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
+<script>
+  window.googletag = window.googletag || {cmd: []};
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/23347781215/gb.gecerblog.online_inter_ad_01', ['fluid'], 'div-gpt-ad-1784530911100-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+</script>
+
+<!-- /23347781215/gb.gecerblog.online_inter_ad_01 -->
+<div id='div-gpt-ad-1784530911100-0'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1784530911100-0'); });
+  </script>
+</div>
