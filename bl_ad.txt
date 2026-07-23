@@ -21,16 +21,16 @@
 <script>
   window.googletag = window.googletag || {cmd: []};
   googletag.cmd.push(function() {
-    googletag.defineSlot('/23347781215/bl.gecerblog.online_banner_01', [[320, 100], [300, 100], [300, 250], [300, 75], [300, 50], [320, 50]], 'div-gpt-ad-1784534640225-0').addService(googletag.pubads());
+    googletag.defineSlot('/23347781215/bl.gecerblog.online_banner_01', [[320, 100], [300, 100], [300, 250], [300, 75], [300, 50], [320, 50]], 'div-gpt-ad-1784798372888-0').addService(googletag.pubads());
     googletag.pubads().enableSingleRequest();
     googletag.enableServices();
   });
 </script>
 
 <!-- /23347781215/bl.gecerblog.online_banner_01 -->
-<div id='div-gpt-ad-1784534640225-0' style='min-width: 300px; min-height: 50px;'>
+<div id='div-gpt-ad-1784798372888-0' style='min-width: 300px; min-height: 50px;'>
   <script>
-    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1784534640225-0'); });
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1784798372888-0'); });
   </script>
 </div>
 
