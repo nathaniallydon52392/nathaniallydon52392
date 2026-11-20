@@ -7,7 +7,23 @@
     <title>bl.gecerblog.online</title>
     <link rel="icon" href="logo.png" />
     <link rel="stylesheet" href="prod-css/index.css">
-    <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
+        <!-- 自定义广告位样式 -->
+    <style>
+        .custom-ad-slot { width: 100%; min-width: 0; margin: 8px 0 28px; text-align: center; box-sizing: border-box; border-radius: 0; overflow: visible; }
+        .custom-ad-slot__label { display: block; margin: 0 0 6px; color: #777; font: 11px/1.4 Arial, sans-serif; letter-spacing: .08em; }
+        .custom-ad-slot__link { position: relative; display: block; width: 100%; overflow: visible; border-radius: 0; background: #101114; text-decoration: none; transition: box-shadow .2s ease; }
+        .custom-ad-slot__link:hover { box-shadow: 0 6px 22px rgba(0, 0, 0, .18); }
+        .custom-ad-slot__link:focus-visible { outline: 3px solid #f87870; outline-offset: 4px; }
+        .custom-ad-slot img.custom-ad-slot__image { display: block; width: 100%; max-width: 100%; height: auto; margin: 0; border-radius: 0; object-fit: contain; clip-path: none; }
+        /* 固定 CSS 像素尺寸，独立于图片缩放 */
+        #customAdLink > .custom-ad-slot__badge { position: absolute; top: 0; right: 0; z-index: 2; display: flex; align-items: center; justify-content: center; gap: 2px; width: 36px; height: 20px; padding: 0; margin: 0; box-sizing: border-box; background: #fff; color: #00aecd; border: 0; border-radius: 0; line-height: 0; pointer-events: none; }
+        #customAdLink > .custom-ad-slot__badge > svg { display: block; flex: none; width: 16px; height: 16px; margin: 0; padding: 0; }
+        #customAdLink > .custom-ad-slot__badge > svg:last-child { width: 10px; }
+        @media (max-width: 600px) {
+            .custom-ad-slot { margin: 4px 0 20px; }
+        }
+    </style>
+    <!-- <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
     <script>
         window.googletag = window.googletag || {cmd: []};
         window.anchorSlot = null;
@@ -32,7 +48,7 @@
                 googletag.display(window.anchorSlot);
             }
         });
-    </script>
+    </script> -->
 </head>
 
 <body>
@@ -65,12 +81,43 @@
             </div>
 
                         <!-- Banner Ad -->
-            <div id="div-gpt-ad-1784534640225-0" style="min-width:300px; min-height:50px; margin:0 auto; display:flex; justify-content:center; align-items:center;">
+            <!-- <div id="div-gpt-ad-1784534640225-0" style="min-width:300px; min-height:50px; margin:0 auto; display:flex; justify-content:center; align-items:center;">
               <script>
                 googletag.cmd.push(function() { googletag.display('div-gpt-ad-1784534640225-0'); });
               </script>
-            </div>
+            </div> -->
 
+            <!-- 自定义广告位：位于 HOT 上方 -->
+            <aside class="custom-ad-slot" aria-label="Advertisement">
+                <span class="custom-ad-slot__label">ADVERTISEMENT</span>
+                <a id="customAdLink" class="custom-ad-slot__link"
+                    href="https://cg01.minutemakernews.com" target="_blank" rel="sponsored noopener noreferrer">
+                    <img id="customAdImage" class="custom-ad-slot__image"
+                        src="./assets/ads/ad-1.png"
+                        alt="Explore the stories shaping our world. Discover news, insights and perspectives. Explore news (opens in a new tab)."
+                        decoding="async">
+                    <!-- 静态广告标识：36×20 CSS px，不随横幅图片缩小 -->
+                    <span class="custom-ad-slot__badge" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none">
+                            <path d="M2.3 1.6a.6.6 0 0 1 .9-.5l10.5 6.4a.6.6 0 0 1 0 1L3.2 14.9a.6.6 0 0 1-.9-.5Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                            <circle cx="6" cy="5.5" r=".85" fill="currentColor"/>
+                            <path d="M6 7.6v3" stroke="currentColor" stroke-width="1.5"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 16" fill="currentColor">
+                            <circle cx="5" cy="3" r="1.25"/><circle cx="5" cy="8" r="1.25"/><circle cx="5" cy="13" r="1.25"/>
+                        </svg>
+                    </span>
+                </a>
+            </aside>
+            <script>
+                const customAdConfig = {
+                    url: "https://cg01.minutemakernews.com", 
+                    image: "./assets/ads/ad-1.png" 
+                };
+                document.getElementById("customAdLink").href = customAdConfig.url;
+                document.getElementById("customAdImage").src = customAdConfig.image;
+            </script>
+            
             <section class="hot font2">
                 <h2>
                     HOT
