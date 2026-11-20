@@ -9,6 +9,21 @@
     <link rel="stylesheet" href="prod-css/index.css">
     <link rel="stylesheet" href="prod-css/play.css" />
     <script src="./assets/js/swiper-element-bundle.min.js"></script>
+    <style>
+    .custom-ad-slot { width: 100%; min-width: 0; margin: 8px 0 28px; text-align: center; box-sizing: border-box; border-radius: 0; overflow: visible; }
+    .custom-ad-slot__label { display: block; margin: 0 0 6px; color: #777; font: 11px/1.4 Arial, sans-serif; letter-spacing: .08em; }
+    .custom-ad-slot__link { position: relative; display: block; width: 100%; overflow: visible; border-radius: 0; background: #101114; text-decoration: none; transition: box-shadow .2s ease; }
+    .custom-ad-slot__link:hover { box-shadow: 0 6px 22px rgba(0, 0, 0, .18); }
+    .custom-ad-slot__link:focus-visible { outline: 3px solid #f87870; outline-offset: 4px; }
+    .custom-ad-slot img.custom-ad-slot__image { display: block; width: 100%; max-width: 100%; height: auto; margin: 0; border-radius: 0; object-fit: contain; clip-path: none; }
+    /* 固定 CSS 像素尺寸，独立于图片缩放 */
+    #customAdLink > .custom-ad-slot__badge { position: absolute; top: 0; right: 0; z-index: 2; display: flex; align-items: center; justify-content: center; gap: 2px; width: 36px; height: 20px; padding: 0; margin: 0; box-sizing: border-box; background: #fff; color: #00aecd; border: 0; border-radius: 0; line-height: 0; pointer-events: none; }
+    #customAdLink > .custom-ad-slot__badge > svg { display: block; flex: none; width: 16px; height: 16px; margin: 0; padding: 0; }
+    #customAdLink > .custom-ad-slot__badge > svg:last-child { width: 10px; }
+    @media (max-width: 600px) {
+        .custom-ad-slot { margin: 4px 0 20px; }
+    }
+    </style>
     <!-- Google Ad Manager GPT -->
     <!-- <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
     <script>
@@ -114,7 +129,7 @@
                 googletag.cmd.push(function() { googletag.display('div-gpt-ad-1784530872185-0'); });
               </script>
             </div> -->
-<aside class="custom-ad-slot" aria-label="Advertisement">
+            <aside class="custom-ad-slot" aria-label="Advertisement">
                 <span class="custom-ad-slot__label">ADVERTISEMENT</span>
                 <a id="customAdLink" class="custom-ad-slot__link"
                     href="https://cg01.minutemakernews.com" target="_blank" rel="sponsored noopener noreferrer">
@@ -143,7 +158,7 @@
                 document.getElementById("customAdLink").href = customAdConfig.url;
                 document.getElementById("customAdImage").src = customAdConfig.image;
             </script>
-            
+
             <section class="hot font2">
                 <h2> <img src="./assets/2 copy.png" alt=""> HOT</h2>
                 <div class="hotGameGridBox">
